@@ -17,7 +17,7 @@ prompt.start();
 
     /// CALLBACK : c'est une fonction executée dans une autre fonction
     (err, result) => {
-9
+
         try {
             const age = parseInt(result.age, 10)
             let message 
