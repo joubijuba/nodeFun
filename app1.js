@@ -6,6 +6,13 @@ prompt.start();
     [{name : "age", message : "enter your age"}],
     (err, result) => {
 
-        console.log('You are born in ' + (2023 - parseInt(result.age,10)));
+        const age = parseInt(result.age, 10)
+        let message 
+
+        message = (age >= 0 && age <= 99) ? 
+            'You are born in ' + (2023 - age) : 
+                "please input a number between 0 and 99"
+
+        console.log(message)
     }
 );
